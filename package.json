@@ -1,0 +1,23 @@
+{
+  "name": "idena-rpc",
+  "version": "1.0.0",
+  "description": "idena rpc",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/idena-dev/idena-rpc.git"
+  },
+  "author": "idena-dev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/idena-dev/idena-rpc/issues"
+  },
+  "homepage": "https://github.com/idena-dev/idena-rpc#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-http-proxy": "^1.6.0"
+  }
+}
