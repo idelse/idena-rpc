@@ -39,17 +39,27 @@ const whitelist = [
 
 ];
 
+function tryParseJSON (rawJson) {
+    try {
+        const object = JSON.parse(rawJson);
+        if (object && typeof object === "object")
+            return object;
+    }
+    catch (e) {}
+    return false;
+};
+
 app.use(proxy(target, {
 
     proxyReqBodyDecorator: (bodyContent) => {
-        const body = JSON.parse(bodyContent);
-        if (whitelist.includes(body.method)) {
+        const body = tryParseJSON(bodyContent);
+        if (body && whitelist.includes(body.method)) {
             return {
                 ...body,
                 key: apiKey,
             };
         }
-        return body;
+        return "";
     },
 
 }));
