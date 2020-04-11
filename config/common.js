@@ -7,6 +7,6 @@ module.exports = {
 	    "bcn_transactions",
 	    "bcn_pendingTransactions",
 	    "bcn_syncing",
-        "bcn_sendRawTx",
+	    "bcn_sendRawTx",
     ]
 };
