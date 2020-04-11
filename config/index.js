@@ -4,7 +4,12 @@ const config = {
     production: require("./production"),
 };
 
-module.exports = {
+const exportedConfig = {
     ...config.common,
     ...(config[process.env.NODE_ENV || "development"]),
 };
+
+console.log(exportedConfig);
+
+module.exports = exportedConfig;
+
