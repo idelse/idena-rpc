@@ -4,7 +4,7 @@
   "description": "idena rpc",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js"
+    "start": "pm2 start ecosystem.config.js"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,8 @@
   "dependencies": {
     "express": "^4.17.1",
     "express-http-proxy": "^1.6.0"
+  },
+  "devDependencies": {
+    "pm2": "^4.2.3"
   }
 }
