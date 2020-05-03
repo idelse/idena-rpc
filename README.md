@@ -4,3 +4,7 @@ This is a simple proxy to create a public idena rpc. It is used to proxy and ser
 ## Links
 - [Documentation](https://www.idena.dev/idena-rpc)
 - [Telegram](https://t.me/idenadev)
+
+
+---
+Consider supporting idena-rpc by donating to `0x62449c9b1029db6df55ecf215d0aaa0cea23c66d`
