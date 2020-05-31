@@ -2,6 +2,7 @@ const app = require("express")();
 const proxy = require("express-http-proxy");
 const { target, apiKey, port, whitelist } = require("./config");
 const isNodeSynced = require("./lib/is-node-synced");
+const cors = require("cors");
 
 function tryParseJSON (rawJson) {
     try {
@@ -12,6 +13,8 @@ function tryParseJSON (rawJson) {
     catch (e) {}
     return false;
 };
+
+app.use(cors());
 
 app.get('/health', (req, res) => {
     return isNodeSynced()
