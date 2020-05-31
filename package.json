@@ -4,6 +4,7 @@
   "description": "idena rpc",
   "main": "index.js",
   "scripts": {
+    "dev": "export NODE_ENV=development && pm2-dev index.js",
     "start": "pm2 start ecosystem.config.js"
   },
   "repository": {
@@ -18,7 +19,8 @@
   "homepage": "https://github.com/idena-dev/idena-rpc#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "express-http-proxy": "^1.6.0"
+    "express-http-proxy": "^1.6.0",
+    "node-fetch": "^2.6.0"
   },
   "devDependencies": {
     "pm2": "^4.2.3"
