@@ -8,6 +8,6 @@ module.exports = {
 	    "bcn_pendingTransactions",
 	    "bcn_syncing",
 	    "bcn_sendRawTx",
-	    "bcn_feePerByte",
+	    "bcn_feePerByte"
     ]
 };
