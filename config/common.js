@@ -8,6 +8,7 @@ module.exports = {
 	    "bcn_pendingTransactions",
 	    "bcn_syncing",
 	    "bcn_sendRawTx",
-	    "bcn_feePerGas"
+	    "bcn_feePerGas",
+	    "dna_epoch"
     ]
 };
