@@ -12,6 +12,7 @@ module.exports = {
 	    "dna_epoch",
 	    "dna_activateInvite",
 	    "dna_activateInviteToRandAddr",
-	    "bcn_blockAt"
+	    "bcn_blockAt",
+	    "bcn_lastBlock"
     ]
 };

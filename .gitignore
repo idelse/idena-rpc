@@ -114,7 +114,6 @@ dist
 .yarn/build-state.yml
 .pnp.*
 
-config/development.js
 config/production.js
 package-lock.json
 .idea
