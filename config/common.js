@@ -9,6 +9,9 @@ module.exports = {
 	    "bcn_syncing",
 	    "bcn_sendRawTx",
 	    "bcn_feePerGas",
-	    "dna_epoch"
+	    "dna_epoch",
+	    "dna_activateInvite",
+	    "dna_activateInviteToRandAddr",
+	    "bcn_blockAt"
     ]
 };
